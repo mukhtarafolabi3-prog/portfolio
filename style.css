@@ -183,6 +183,145 @@
   color: #666;
   line-height: 1.5;
 }
+.services {
+  padding: 80px 50px;
+  background: #fff;
+  text-align: center;
+}
+
+.services-header span {
+  background: #6c2bd9;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.services-header h1 {
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.services-header p {
+  color: #555;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.services-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.service-box {
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: 0.3s;
+  text-align: left;
+}
+
+.service-box:hover {
+  transform: translateY(-6px);
+  background: #fff;
+}
+
+.service-box h3 {
+  color: #6c2bd9;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 50px;
+  background: #f5f5f5;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.skills-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.skills-left h1 {
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.skills-left p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.skills-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  margin-bottom: 5px;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.fill {
+  height: 10px;
+  background: #6c2bd9;
+  border-radius: 10px;
+}
+
+.footer {
+  background: #6c2bd9;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.footer h2 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.copy {
+  margin-top: 20px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.html { width: 90%; }
+.css { width: 85%; }
+.js { width: 60%; }
+
     @media(max-width:768px){
   .hero {
     flex-direction:column;
