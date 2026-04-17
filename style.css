@@ -364,4 +364,46 @@
   }
 
   nav {margin:10px 0;}
+
+  @media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin: 10px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+  }
+
+  .right {
+    grid-template-columns: 1fr;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
 }
