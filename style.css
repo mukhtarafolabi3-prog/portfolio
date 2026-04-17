@@ -112,7 +112,6 @@
   flex-wrap: wrap;
 }
 
-/* LEFT SIDE */
 .left {
   flex: 1;
   min-width: 300px;
@@ -152,7 +151,6 @@
   cursor: pointer;
 }
 
-/* RIGHT SIDE */
 .right {
   flex: 1;
   min-width: 300px;
