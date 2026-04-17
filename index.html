@@ -1,20 +1,20 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afolabi Mukhtar | Front-End Developer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-</head>
-<body>
 
+<!-- HEADER -->
 <header>
-  <h2>Afolabi Mukhtar</h2>
+  <h2 class="logo">Afolabi</h2>
 
-  <nav>
+  <nav id="nav-links">
     <a href="#">Home</a>
     <a href="About.html">About</a>
     <a href="Services.html">Services</a>
@@ -22,185 +22,134 @@
     <a href="Contact.html">Contact</a>
   </nav>
 
-  <button class="btn">Contact Me</button>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-text">
-    <h1>Hello, I'm <br> Afolabi Mukhtar Ayomide</h1>
+    <h1>Hi, I'm <span>Afolabi Mukhtar</span></h1>
+    <h3>Front-End Developer & Web Designer</h3>
 
     <p>
-      I'm a Website Designer and Front-End Developer specializing in modern,
-      responsive websites. I help businesses build clean and user-friendly web experiences.
+      I build modern, responsive, and user-friendly websites that help
+      businesses grow and stand out online.
     </p>
 
-    <button class="btn" onclick="sayHello()">Say Hello</button>
+    <div class="hero-btns">
+      <a href="Portfolio.html" class="btn">View My Work</a>
+      <a href="https://wa.me/2348068744708" class="btn-outline">Hire Me</a>
+    </div>
   </div>
 
-  <img src="images/my pic.jpg" alt="Afolabi Mukhtar">
-</section>
+  <div class="hero-img">
+    <img src="images/my pic.jpg" alt="Afolabi Mukhtar">
+  </div>
 </section>
 
+<!-- STATS -->
 <section class="stats">
-  <div class="stat">
-    <h2>10</h2>
-    <p>Satisfied Clients</p>
+  <div>
+    <h2>10+</h2>
+    <p>Clients</p>
   </div>
-
-  <div class="stat">
-    <h2>7</h2>
-    <p>Projects Completed</p>
+  <div>
+    <h2>7+</h2>
+    <p>Projects</p>
   </div>
-
-  <div class="stat">
-    <h2>5</h2>
-    <p>Reviews Given</p>
+  <div>
+    <h2>1+</h2>
+    <p>Years Experience</p>
   </div>
 </section>
-<section class="hire">
-    <div class="container">
-        
-        <div class="left">
-            <span class="tag">My Skills</span>
-            <h1>
-                Why Hire Me For Your <br>
-                <span>Next Project?</span>
-            </h1>
-            <p>
-               I am a frontend developer and website designer, focused on creating responsive, clean, and user-friendly websites that deliver great user experiences.
-            </p>
-            <button>Hire Me</button>
-        </div>
 
-        <div class="right">
-            <div class="box">
-                <h3>Responsive Design</h3>
-                <p>Frontend development ensures that websites work properly on all devices, including mobile phones, tablets, and desktops.</p>
-            </div>
-
-            <div class="box">
-                <h3>User Interaction</h3>
-                <p>It allows users to interact with websites smoothly through buttons, forms, animations, and navigation features.</p>
-            </div>
-
-            <div class="box">
-                <h3>Better User Experience</h3>
-                <p>Good website design makes it easy for users to navigate and understand a website without confusion.</p>
-            </div>
-
-            <div class="box">
-                <h3>Professional Appearance</h3>
-                <p>A well-designed website builds trust and makes a business look credible and professional.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
+<!-- SERVICES -->
 <section class="services">
+  <h1>My Services</h1>
 
-  <div class="services-header">
-    <span>My Services</span>
-    <h1>What I Can Do For You</h1>
-    <p>I help businesses and individuals build modern, responsive, and user-friendly websites.</p>
-  </div>
+  <div class="service-container">
 
-  <div class="services-container">
-
-    
-    <div class="service-box">
+    <div class="card">
       <h3>Front-End Development</h3>
-      <p>Building responsive websites using HTML, CSS, and JavaScript.</p>
+      <p>Clean and responsive websites using HTML, CSS, and JavaScript.</p>
     </div>
 
+    <div class="card">
+      <h3>Web Design</h3>
+      <p>Modern UI designs focused on user experience and simplicity.</p>
+    </div>
 
-    <div class="service-box">
-      <h3>Responsive Web Design</h3>
-      <p>I ensure websites look and function perfectly on mobile phones, tablets, and desktop screens.</p>
+    <div class="card">
+      <h3>Responsive Design</h3>
+      <p>Mobile-friendly layouts that work perfectly on all devices.</p>
     </div>
 
   </div>
-
 </section>
+
+<!-- SKILLS -->
 <section class="skills">
+  <h1>My Skills</h1>
 
-  <div class="skills-left">
-    <span class="tag">My Skills</span>
-    <h1>What I’m Good At</h1>
-    <p>
-      I specialize in creating modern, responsive websites using HTML, CSS, and JavaScript.
-      I also design clean UI layouts and improve user experience.
-    </p>
+  <div class="skill">
+    <p>HTML</p>
+    <div class="bar"><span style="width:90%"></span></div>
   </div>
 
-  <div class="skills-right">
-
-    <div class="skill">
-      <p>HTML</p>
-      <div class="bar"><div class="fill html"></div></div>
-    </div>
-
-    <div class="skill">
-      <p>CSS</p>
-      <div class="bar"><div class="fill css"></div></div>
-    </div>
-
-    <div class="skill">
-      <p>JavaScript</p>
-      <div class="bar"><div class="fill js"></div></div>
-    </div>
-
-
+  <div class="skill">
+    <p>CSS</p>
+    <div class="bar"><span style="width:85%"></span></div>
   </div>
 
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="bar"><span style="width:60%"></span></div>
+  </div>
 </section>
-<section class="testimonials">
 
+<!-- TESTIMONIALS -->
+<section class="testimonials">
   <h1>What Clients Say</h1>
 
-  <div class="testimonial-container">
-
-    <div class="testimonial">
-      <p>"He delivered my website very fast and it looks amazing. Highly recommended!"</p>
-      <h4>- Client A</h4>
-    </div>
-
-    <div class="testimonial">
-      <p>"Very professional and easy to work with. Great UI design skills."</p>
-      <h4>- Client B</h4>
-    </div>
-
-    <div class="testimonial">
-      <p>"My business website increased engagement after his redesign."</p>
-      <h4>- Client C</h4>
-    </div>
-
+  <div class="testimonial-box">
+    <p>"Amazing work, fast delivery and very professional."</p>
+    <h4>- Client A</h4>
   </div>
 
+  <div class="testimonial-box">
+    <p>"He transformed my website completely. Highly recommend."</p>
+    <h4>- Client B</h4>
+  </div>
 </section>
-  
-<footer class="footer">
 
+<!-- CTA -->
+<section class="cta">
+  <h1>Have a Project in Mind?</h1>
+  <p>Let's build something amazing together.</p>
+  <a href="https://wa.me/2348068744708" class="btn">Contact Me</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
   <h2>Afolabi Mukhtar</h2>
-
   <p>Front-End Developer & Web Designer</p>
 
   <div class="socials">
-    <a href="#">Tictok</a>
+    <a href="#">TikTok</a>
     <a href="https://www.instagram.com/afolabimukhtar792/">Instagram</a>
     <a href="https://wa.me/2348068744708">WhatsApp</a>
     <a href="#">GitHub</a>
   </div>
 
   <p class="copy">© 2026 All Rights Reserved</p>
-
 </footer>
-</body>
-</html>
-
 
 <script>
-
+function toggleMenu() {
+  document.getElementById("nav-links").classList.toggle("active");
+}
 </script>
 
 </body>
 </html>
+```
