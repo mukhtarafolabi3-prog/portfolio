@@ -1,55 +1,83 @@
+```html id="tq3m8n"
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Afolabi Mukhtar</title>
+  <link rel="stylesheet" href="about.css">
 </head>
-<body>
-    
-<header>
-  <h2>Afolabi Mukhtar</h2>
 
-  <nav>
+<body>
+
+<header>
+  <h2>Afolabi</h2>
+
+  <nav id="nav-links">
     <a href="index.html">Home</a>
-    <a href="About.html">About</a>
+    <a href="#" class="active">About</a>
     <a href="services.html">Services</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <button class="btn">Contact Me</button>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
+
+<!-- ABOUT HERO -->
 <section class="about">
-    <div class="container">
-        
-        <!-- IMAGE SIDE -->
-        <div class="about-image">
-            <img src="images/my pic.jpg" alt="Mukhtar Afolabi">
-        </div>
+  <div class="container">
 
-        <!-- TEXT SIDE -->
-        <div class="about-text">
-            <span class="tag">About Me</span>
-            <h1>Who is Mukhtar Afolabi?</h1>
-
-            <p>
-                I'm a passionate Frontend Developer and Website Designer focused on 
-                creating modern, responsive, and user-friendly websites. I enjoy turning 
-                ideas into real digital experiences that help businesses grow online.
-            </p>
-
-            <p>
-                With skills in HTML, CSS, and JavaScript, I build clean and efficient 
-                interfaces that not only look good but also perform well across all devices.
-            </p>
-
-            <a href="https://wa.me/2348068744708" class="btn">Hire Me</a>
-        </div>
-
+    <div class="about-image">
+      <img src="images/my pic.jpg" alt="Afolabi Mukhtar">
     </div>
+
+    <div class="about-text">
+      <span class="tag">About Me</span>
+      <h1>Who is Afolabi Mukhtar?</h1>
+
+      <p>
+        I am a Front-End Developer and Website Designer passionate about building
+        modern, responsive, and user-friendly websites that help businesses grow online.
+      </p>
+
+      <p>
+        I specialize in HTML, CSS, and JavaScript, creating clean designs and smooth
+        user experiences across all devices. My goal is to turn ideas into real,
+        functional digital solutions.
+      </p>
+
+      <a href="https://wa.me/2348068744708" class="btn">Hire Me</a>
+    </div>
+
+  </div>
 </section>
+
+<!-- SKILLS / EXPERIENCE -->
+<section class="skills">
+  <h1>My Skills & Experience</h1>
+
+  <div class="skills-container">
+
+    <div class="skill-box">
+      <h3>Front-End Development</h3>
+      <p>I build responsive websites using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="skill-box">
+      <h3>UI / UX Design</h3>
+      <p>I create clean and user-friendly interfaces for better experience.</p>
+    </div>
+
+    <div class="skill-box">
+      <h3>Website Optimization</h3>
+      <p>I improve website speed, performance, and SEO structure.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
 <section class="projects">
 
   <div class="projects-header">
@@ -61,19 +89,19 @@
   <div class="projects-container">
 
     <div class="project-card">
-      <img src="#" alt="Project 1">
+      <img src="images/project1.jpg" alt="Project 1">
       <h3>Business Website</h3>
       <p>Modern responsive website for a business brand.</p>
     </div>
 
     <div class="project-card">
-      <img src="#" alt="Project 2">
+      <img src="images/project2.jpg" alt="Project 2">
       <h3>Portfolio Website</h3>
       <p>Personal portfolio website design and development.</p>
     </div>
 
     <div class="project-card">
-      <img src="#" alt="Project 3">
+      <img src="images/project3.jpg" alt="Project 3">
       <h3>Landing Page</h3>
       <p>High-converting landing page for product marketing.</p>
     </div>
@@ -81,55 +109,36 @@
   </div>
 
 </section>
-<section class="contact">
 
-  <div class="contact-header">
-    <span class="tag">Contact Me</span>
-    <h1>Let’s Work Together</h1>
-    <p>If you have a project in mind, feel free to reach out.</p>
-  </div>
-
-  <div class="contact-container">
-
-    <!-- FORM -->
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
-    <div class="contact-info">
-      <h3>Contact Info</h3>
-      <p><strong>Email:</strong> mukhtarafolabi@gmail.com</p>
-      <p><strong>Phone:</strong> +234 806 874 4708</p>
-      <p><strong>Location:</strong> Nigeria</p>
-    </div>
-
-  </div>
-
+<!-- CTA -->
+<section class="cta">
+  <h1>Want to Work With Me?</h1>
+  <p>I’m available for freelance projects and collaborations.</p>
+  <a href="https://wa.me/2348068744708" class="btn">Let’s Talk</a>
 </section>
+
+<!-- FOOTER -->
 <footer class="footer">
-
   <h2>Afolabi Mukhtar</h2>
-
   <p>Front-End Developer & Web Designer</p>
 
   <div class="socials">
-    <a href="#">Tictok</a>
+    <a href="#">TikTok</a>
     <a href="https://www.instagram.com/afolabimukhtar792/">Instagram</a>
     <a href="https://wa.me/2348068744708">WhatsApp</a>
     <a href="#">GitHub</a>
   </div>
 
   <p class="copy">© 2026 All Rights Reserved</p>
-
 </footer>
+
+<!-- JS -->
 <script>
-    function sayHello() {
-        alert("Hello! Thanks for visiting my portfolio.");
-    }
-    
+function toggleMenu() {
+  document.getElementById("nav-links").classList.toggle("active");
+}
 </script>
+
 </body>
 </html>
+```
