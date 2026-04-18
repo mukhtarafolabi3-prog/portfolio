@@ -1,25 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="services.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Afolabi Mukhtar</title>
+  <link rel="stylesheet" href="services.css">
 </head>
-<body>
-    <header>
-  <h2>Afolabi Mukhtar</h2>
 
-  <nav>
+<body>
+
+<!-- HEADER -->
+<header>
+  <h2>Afolabi</h2>
+
+  <nav id="nav-links">
     <a href="index.html">Home</a>
     <a href="About.html">About</a>
-    <a href="services.html">Services</a>
+    <a href="services.html" class="active">Services</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <button class="btn">Contact Me</button>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
+
+<!-- SERVICES -->
 <section class="services">
 
   <div class="services-header">
@@ -53,5 +59,66 @@
   </div>
 
 </section>
+
+<!-- PROJECTS -->
+<section class="projects">
+
+  <h1>My Projects</h1>
+  <p>Some of the work I have done recently.</p>
+
+  <div class="project-cards">
+
+    <div class="project-card">
+      <img src="images/project1.jpg" alt="Portfolio Website">
+      <h3>Portfolio Website</h3>
+      <p>A responsive personal portfolio built with HTML & CSS.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="images/project2.jpg" alt="Landing Page">
+      <h3>Landing Page</h3>
+      <p>A modern landing page design for a business.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="images/project3.jpg" alt="Login UI">
+      <h3>Login UI</h3>
+      <p>A simple login and register interface using JavaScript.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA (VERY IMPORTANT) -->
+<section class="cta">
+  <h1>Need a Website?</h1>
+  <p>I’m available to help you build a modern and responsive website.</p>
+  <a href="https://wa.me/2348068744708" class="btn">Hire Me</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <h2>Afolabi Mukhtar</h2>
+  <p>Front-End Developer & Web Designer</p>
+
+  <div class="socials">
+    <a href="#">TikTok</a>
+    <a href="https://www.instagram.com/afolabimukhtar792/">Instagram</a>
+    <a href="https://wa.me/2348068744708">WhatsApp</a>
+    <a href="#">GitHub</a>
+  </div>
+
+  <p class="copy">© 2026 All Rights Reserved</p>
+</footer>
+
+<!-- JS -->
+<script>
+function toggleMenu() {
+  document.getElementById("nav-links").classList.toggle("active");
+}
+</script>
+
 </body>
 </html>
+```
