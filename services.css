@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-/* HEADER */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -62,7 +62,6 @@ nav a.active {
   opacity: 0.85;
 }
 
-/* TAG */
 .tag {
   background: #6c2bd9;
   color: #fff;
