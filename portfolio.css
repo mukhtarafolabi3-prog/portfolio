@@ -102,6 +102,7 @@ footer {
     display: flex;
   }
 
-  .menu-toggle {
+ .menu-toggle {
     display: block;
   }
+}
