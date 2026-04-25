@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="portfolio.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afolabi Portfolio</title>
+<link rel="stylesheet" href="portfolio.css">
 </head>
+
 <body>
+
 <header>
   <h2>Afolabi</h2>
 
@@ -15,70 +17,74 @@
     <a href="About.html">About</a>
     <a href="services.html">Services</a>
     <a href="Portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
+    <a href="Contact.html">Contact</a>
   </nav>
 
-  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
 </header>
+
+<section class="hero">
+  <h1>My Portfolio</h1>
+  <p>Digital Marketing & Web Design Services</p>
+</section>
+
 <div class="portfolio-grid">
 
-  <!-- PROJECT 1 -->
   <div class="portfolio-card">
-    <img src="images/project1.jpg" alt="">
-    <h3>Portfolio Website</h3>
-    <p>Responsive personal website built with HTML & CSS.</p>
+    <img src="images/trusterend.png" alt="Portfolio Website">
+    <h3>Trust Errand Go Website Design</h3>
+    <p>Designed and developed a responsive service-based website for Trust Errand Go, focused on presenting their services clearly and building customer trust. The website emphasizes user-friendly navigation, fast performance, and mobile responsiveness to ensure a smooth experience across all devices.</p>
+    <div class="btn-group">
+      <a href="https://trusterrandgo.com.ng/" class="btn">View</a>
+      <a href="https://wa.me/2348068744708" class="btn-outline">Hire Me</a>
+    </div>
   </div>
 
-  <!-- PROJECT 2 -->
   <div class="portfolio-card">
-    <img src="images/project2.jpg" alt="">
-    <h3>Landing Page</h3>
-    <p>Modern landing page for a business.</p>
+    <img src="images/techflow.png" alt="Landing Page">
+    <h3>Responsive Business Website for TechFlow Dynamic</h3>
+    <p>“A modern and responsive business website designed for TechFlow Dynamic, showcasing their services, brand identity, and digital solutions. Built with a focus on user experience, speed, and mobile responsiveness.</p>
+    <div class="btn-group">
+      <a href="https://techflowdynamic.com.ng/" class="btn">View</a>
+      <a href="https://wa.me/2348068744708" class="btn-outline">Hire Me</a>
+    </div>
   </div>
 
-  <!-- PROJECT 3 -->
   <div class="portfolio-card">
-    <img src="images/project3.jpg" alt="">
+    <img src="https://via.placeholder.com/400x200" alt="Login UI">
     <h3>Login UI</h3>
-    <p>Login and register interface using JavaScript.</p>
-  </div>
-
-  <!-- PROJECT 4 -->
-  <div class="portfolio-card">
-    <img src="images/project4.jpg" alt="">
-    <h3>Business Website</h3>
-    <p>A multi-page business website design.</p>
-  </div>
-
-  <!-- PROJECT 5 -->
-  <div class="portfolio-card">
-    <img src="images/project5.jpg" alt="">
-    <h3>Product Landing Page</h3>
-    <p>A landing page designed to convert visitors.</p>
-  </div>
-
-  <!-- PROJECT 6 -->
-  <div class="portfolio-card">
-    <img src="images/project6.jpg" alt="">
-    <h3>Dashboard UI</h3>
-    <p>A simple dashboard layout design.</p>
+    <p>Login and register system using JavaScript.</p>
+    <div class="btn-group">
+      <a href="#" class="btn">View</a>
+      <a href="https://wa.me/2348068744708" class="btn-outline">Hire Me</a>
+    </div>
   </div>
 
 </div>
+
+<footer class="footer">
+  <h2>Afolabi Mukhtar</h2>
+  <p>Front-End Developer & Web Designer</p>
+
+  <div class="socials">
+    <a href="#">TikTok</a>
+    <a href="#">Instagram</a>
+    <a href="#">GitHub</a>
+  </div>
+
+  <p>© 2026 All Rights Reserved</p>
+</footer>
+
+<a href="https://wa.me/2348068744708" class="whatsapp">Chat Me</a>
+
 <script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const nav = document.getElementById("nav");
-  const navLinks = document.querySelectorAll("#nav a");
+const menuToggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav");
 
-  menuToggle.addEventListener("click", function () {
-    nav.classList.toggle("active");
-  });
-
-  navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("active");
-    });
-  });
+menuToggle.addEventListener("click", ()=>{
+  nav.classList.toggle("active");
+});
 </script>
+
 </body>
 </html>

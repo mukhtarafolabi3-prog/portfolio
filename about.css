@@ -11,7 +11,6 @@ body {
   color: #333;
 }
 
-/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
@@ -62,7 +61,6 @@ nav a.active {
   opacity: 0.85;
 }
 
-/* TAG */
 .tag {
   background: #6c2bd9;
   color: #fff;
@@ -105,7 +103,7 @@ nav a.active {
 .about-text p {
   line-height: 1.6;
   color: #555;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 /* SKILLS */
@@ -194,7 +192,7 @@ nav a.active {
 
 .project-card h3 {
   color: #6c2bd9;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .project-card p {
@@ -210,9 +208,11 @@ nav a.active {
 }
 
 .cta h1 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-
+.cta a{
+  margin-bottom: 20px;
+}
 /* FOOTER */
 .footer {
   background: #6c2bd9;
@@ -240,7 +240,6 @@ nav a.active {
   cursor: pointer;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
 
   header {

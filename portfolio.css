@@ -1,174 +1,159 @@
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background: #fff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+:root{
+  --primary:#7c3aed;
+  --dark:#111827;
+  --light:#f9fafb;
 }
 
-header h2 {
-  color: #6c2bd9;
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:var(--light);
 }
 
-/* NAV */
-nav {
-  display: flex;
-  align-items: center;
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:white;
+  position:sticky;
+  top:0;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
-nav a {
-  margin: 0 12px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  position: relative;
-  transition: 0.3s;
+nav{
+  display:flex;
+  gap:20px;
 }
 
-/* NICE HOVER LINE */
-nav a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background: #6c2bd9;
-  left: 0;
-  bottom: -5px;
-  transition: 0.3s;
+nav a{
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
 }
 
-nav a:hover::after,
-nav a.active::after {
-  width: 100%;
+.menu-toggle{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
 }
 
-nav a:hover,
-nav a.active {
-  color: #6c2bd9;
+/* HERO */
+.hero{
+  text-align:center;
+  padding:60px 20px;
 }
 
-/* MENU ICON */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-}
-/* PORTFOLIO SECTION */
-.portfolio {
-  padding: 60px 20px;
-  background: #f9f9f9;
+.hero h1{
+  font-size:32px;
 }
 
-/* CONTAINER */
-.container {
-  max-width: 1100px;
-  margin: auto;
+.hero p{
+  color:#555;
 }
 
-/* TITLE */
-.section-title {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 10px;
+/* PORTFOLIO */
+.portfolio-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  padding:40px;
 }
 
-.section-subtitle {
-  text-align: center;
-  color: #555;
-  margin-bottom: 40px;
+.portfolio-card{
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  transition:0.3s;
 }
 
-/* GRID */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 per row */
-  gap: 25px;
+.portfolio-card:hover{
+  transform:translateY(-8px);
 }
 
-/* CARD */
-.portfolio-card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
-  cursor: pointer;
+.portfolio-card img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
 }
 
-/* HOVER EFFECT */
-.portfolio-card:hover {
-  transform: translateY(-8px);
+.portfolio-card h3{
+  padding:10px;
 }
 
-/* IMAGE */
-.portfolio-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  transition: 0.3s;
+.portfolio-card p{
+  padding:0 10px 10px;
+  color:#666;
 }
 
-/* IMAGE HOVER ZOOM */
-.portfolio-card:hover img {
-  transform: scale(1.05);
+.btn-group{
+  display:flex;
+  gap:10px;
+  padding:10px;
 }
 
-/* TEXT */
-.portfolio-card h3 {
-  margin: 15px;
+.btn, .btn-outline{
+  padding:8px 12px;
+  border-radius:5px;
+  text-decoration:none;
+  font-size:14px;
 }
 
-.portfolio-card p {
-  margin: 0 15px 20px;
-  color: #555;
-  font-size: 14px;
+.btn{
+  background:var(--primary);
+  color:white;
 }
+
+.btn-outline{
+  border:1px solid var(--primary);
+  color:var(--primary);
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  padding:30px;
+  background:#111827;
+  color:white;
+}
+
+.socials a{
+  margin:0 10px;
+  color:#ccc;
+  text-decoration:none;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:12px 15px;
+  border-radius:50px;
+  text-decoration:none;
+}
+
 /* MOBILE */
-@media (max-width: 768px) {
-
-  header {
-    padding: 20px;
+@media(max-width:768px){
+  nav{
+    position:absolute;
+    top:70px;
+    right:0;
+    background:white;
+    flex-direction:column;
+    width:200px;
+    display:none;
   }
 
-  nav {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    /* 🔥 Smooth animation */
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
+  nav.active{
+    display:flex;
   }
 
-  nav.active {
-    max-height: 300px;
+  .menu-toggle{
+    display:block;
   }
-
-  nav a {
-    padding: 15px;
-    border-bottom: 1px solid #eee;
-    margin: 0;
   }
-
-  nav a:hover {
-    background: #f5f5f5;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
